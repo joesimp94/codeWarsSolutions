@@ -1,4 +1,4 @@
-const greet = ("hello world!") => {
-  return greet
+function greet() {
+  return "hello world!";
 }
-console.log(greet);
+console.log(greet());
