@@ -29,8 +29,14 @@ function check(a, x) {
   // your code here
 }
 
-To solve this, I simply returned the array using the .includes() method to display wether or not the code array contained x.
+To solve this, I simply returned the array using the .includes() method to display whether or not the code array contained x.
 
 function check(a, x) {
   return a.includes(x)
 }
+
+# Reversed Sequence
+For this challenge, I needed to build a function that returns an array of integers from n to 1 where n>0.
+
+
+
