@@ -17,7 +17,20 @@ greet();
 
 This however presented a new problem on the codewars website. The console log was returning hello world!, however, the task wanted to see 'hello world!'. To fix this, I made some final adjustments to my code. First, I replaced const with function to better outline the purpose of the code. Then, I re-wrote the return code with the wanted string as opposed to another variable. Finally, I added a console log to the final greet() function executer. 
 
-const greet() {
+function greet() {
   return "hello world!";
 }
 console.log(greet());
+
+# You Only Need One
+For this project, I was provided with an array, a value, and a function to check if the array contained said value. I began with this provided code:
+
+function check(a, x) {
+  // your code here
+}
+
+To solve this, I simply returned the array using the .includes() method to display wether or not the code array contained x.
+
+function check(a, x) {
+  return a.includes(x)
+}
