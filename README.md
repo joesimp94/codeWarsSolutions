@@ -29,8 +29,58 @@ function check(a, x) {
   // your code here
 }
 
-To solve this, I simply returned the array using the .includes() method to display wether or not the code array contained x.
+To solve this, I simply returned the array using the .includes() method to display whether or not the code array contained x.
 
 function check(a, x) {
   return a.includes(x)
 }
+
+# Sum Arrays
+For this challenge, I needed to write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+First, I added my array to the code provided:
+
+// Sum Numbers
+let numbers = [1, 2, 3, 4, 5]
+
+function sum (numbers) {
+    "use strict";
+};
+
+Then, I added a method using the .replace() method to add all the numbers in the array, however this was unsuccessful, so I reset the code. I decided to try a for loop, which worked for the function:
+
+function sum (numbers) {
+    "use strict";
+    let result = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i]
+  }
+    return result
+};
+
+# Grasshopper - Summation
+This challenge was similar to the previous one; adding together numbers in an array. I started with this code:
+
+var summation = function (num) {
+  // Code here
+}
+
+To begin with, I thought about using a for loop like in the previous kata. I wrote it like this:
+
+var summation = function (num) {
+  let sum = 0;
+  for (let i=0; i<num.length; i++) 
+    sum += num[i]
+  return sum
+}
+
+This didn't seem to work, so I tweaked some of the for loop to improve the functionality:
+
+var summation = function (num) {
+  let sum = 0;
+  for (let i=0; i<=num; i++) 
+    sum += i
+  return sum
+}
+
+ 
