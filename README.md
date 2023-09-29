@@ -83,4 +83,37 @@ var summation = function (num) {
   return sum
 }
 
- 
+# A Needle in the Haystack
+In this challenge, I needed to create a function that would search an array, find a "needle", and return what index the needle was at. I was provided with an empty function shell and got to work:
+
+function findNeedle(haystack) {
+  // your code here
+}
+
+I thought through my options and decided to try using the .indexOf() method:
+
+function findNeedle(haystack) {
+  let index = haystack.indexOf()
+ return (`Found the needle at position ${index}`)
+}
+
+This gave me the error "expected 'Found the needle at position 2' to equal 'found the needle at position 3'", so I knew I was close. I condensed the code and attempted this function:
+
+function findNeedle(haystack) {
+ return "found the needle at position" + haystack.indexOf("needle")
+}
+
+This worked, but watch your punctuation - spent too long figuring out that the tests didn't want capital letters!
+
+# Remove String Spaces
+This challenge required me to remove all blank spaces in a string. I knew that the .trim() method could remove spaces from the beginning and end of a string, but I wasn't sure about the spaces in between, so to begin, I did some research. I ended up deciding to try the .replace() method, with a regular regex expression that targets and replaces whitespaces. This was a fun and easy kata!
+
+function noSpace(x){
+let string = x
+let whiteSpaceRemoved = (string.replace(/\s/g, ''))
+return whiteSpaceRemoved
+}
+
+
+
+
